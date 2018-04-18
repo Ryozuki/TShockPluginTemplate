@@ -15,7 +15,19 @@
   <TemplateContent>
     <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
       <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
-      <ProjectItem ReplaceParameters="true" OpenInEditor="true">Class1.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true" TargetFileName="$safeprojectname$">Class1.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true">Database.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true">ConfigFile.cs</ProjectItem>
     </Project>
   </TemplateContent>
+  <WizardExtension>
+    <Assembly>NuGet.VisualStudio.Interop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+    <FullClassName>NuGet.VisualStudio.TemplateWizard</FullClassName>
+  </WizardExtension>
+  <WizardData>
+    <packages>
+      <package id="Newtonsoft.Json" version="9.0.1" targetFramework="net461" />
+      <package id="Ryozuki.TShockPlugin" version="1.1.0" targetFramework="net461" />
+    </packages>
+  </WizardData>
 </VSTemplate>
