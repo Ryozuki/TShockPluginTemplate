@@ -5,6 +5,8 @@ using System.Text;
 using TShockAPI;
 using Terraria;
 using TerrariaApi.Server;
+using System.Reflection;
+using System.IO;
 
 namespace $safeprojectname$
 {
@@ -50,7 +52,7 @@ namespace $safeprojectname$
         #region Hooks
         private void OnInitialize(EventArgs args)
         {
-            DB.Connect();
+            Database.Connect();
             Commands.ChatCommands.Add(new Command("$safeprojectname$.help".ToLower(), CHelp, "chelp")
             {
                 HelpText = "Usage: /chelp"

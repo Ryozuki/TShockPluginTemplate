@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="VSIXProject.05dc7bb1-b676-4221-9040-4ee281fa8e30" Version="1.0" Language="en-US" Publisher="Company" />
-        <DisplayName>VSIXProject</DisplayName>
-        <Description>Empty VSIX Project.</Description>
+        <Identity Id="VSIXProject.05dc7bb1-b676-4221-9040-4ee281fa8e30" Version="1.2" Language="en-US" Publisher="Ryozuki" />
+        <DisplayName>TshockPluginExtension</DisplayName>
+        <Description xml:space="preserve">A tshock plugin template.</Description>
     </Metadata>
     <Installation>
         <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0]" />
@@ -15,6 +15,6 @@
         <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="TshockPlugin" d:TargetPath="|TshockPlugin;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
     </Assets>
     <Prerequisites>
-        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,16.0)" DisplayName="Visual Studio core editor" />
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,16.0)" DisplayName="Visual Studio core editor"/>
     </Prerequisites>
 </PackageManifest>
